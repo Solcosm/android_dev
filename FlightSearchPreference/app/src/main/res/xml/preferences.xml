@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Options">
+        <ListPreference
+            android:key="flight_options"
+            android:title="Flight Options"
+            android:summary="@string/flight_options_summary"
+            android:entries="@array/flight_options"
+            android:entryValues="@array/flight_options_values"
+            android:dialogTitle="@string/dialog_title"
+            android:defaultValue="@string/flight_options_default_value"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Alerts">
+        <CheckBoxPreference
+            android:key="email"
+            android:title="Send email?"
+            android:defaultValue="false"
+            />
+        <EditTextPreference
+            android:key="email_address"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:title="Email Address"
+            android:dependency="email"/>
+        <SwitchPreference
+            android:key="email_switch"
+            android:title="Switch to actually send email!"
+            android:summaryOff="Else it won't work..."
+            android:summaryOn="Now it will!"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="flight_options">
+        <item>Total cost</item>
+        <item>Number of stops</item>
+        <item>Airline</item>
+    </string-array>
+    <string name="dialog_title">
+        Flight Options
+    </string>
+    <string name="flight_options_summary">
+        Currently set to Total cost
+    </string>
+</resources>
