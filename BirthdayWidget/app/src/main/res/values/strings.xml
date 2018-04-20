@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BirthdayWidget</string>
+    <string name="appwidget_text">Name</string>
+    <string name="appwidget_text2">Birth Date</string>
+    <string name="add_widget">Add widget</string>
+    <string name="day_counter">∞ Days Remaining</string>
+    <string name="buy_button">Buy Gifts</string>
+    <string name="fire">🔥</string>
+    <string name="instructions">Activate from the widgets view by:\n\n 1. Long pressing on your home screen\n 2. Selecting Widgets\n 3. Dragging out the Birthday Widget</string>
+    <string name="instructions_comment">Once the widget is activated you can begin planning ahead for your friends and families birthdays!</string>
+    <string name="instructions_closer">Close this activity to begin</string>
+    <string name="configure">Configure</string>
+</resources>
