@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ColorPicker</string>
+    <string name="splash">Welcome to the Color Searcher\n\nThis application allows for you to perform a Google search for any color from the ROY G. BIV (Rainbow) hue or using your own custom hexadecimal string\n\nTap the button below to get started</string>
+    <string name="splash_button">Tap to Start</string>
+    <string name="instructions">Choose a color. Perform a Google Search.</string>
+    <string name="instructionsAlt">Alternatively, enter a custom color.</string>
+    <string name="confirmation">Custom Color Search</string>
+    <string name="informationKiosk">Info</string>
+    <string name="color1">Red</string>
+    <string name="color2">Orange</string>
+    <string name="color3">Yellow</string>
+    <string name="color4">Green</string>
+    <string name="color5">Blue</string>
+    <string name="color6">Indigo</string>
+    <string name="color7">Violet</string>
+</resources>

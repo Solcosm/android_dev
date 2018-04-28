@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="@string/instructions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/color1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/color2"
+        app:layout_constraintEnd_toStartOf="@+id/color2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/color2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/color2"
+        app:layout_constraintEnd_toStartOf="@+id/color3"
+        app:layout_constraintStart_toEndOf="@+id/color"
+        app:layout_constraintTop_toBottomOf="@+id/instructions" />
+
+    <Button
+        android:id="@+id/color3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/color3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/color2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/color2" />
+
+    <Button
+        android:id="@+id/color4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/color4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/color5"
+        app:layout_constraintEnd_toStartOf="@+id/color5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/color5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/color5"
+        app:layout_constraintBottom_toTopOf="@+id/color7"
+        app:layout_constraintEnd_toStartOf="@+id/color6"
+        app:layout_constraintStart_toEndOf="@+id/color4" />
+
+    <Button
+        android:id="@+id/color6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/color6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/color5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/color5" />
+
+    <Button
+        android:id="@+id/color7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/color7"
+        app:layout_constraintBottom_toTopOf="@+id/instructionsAlt"
+        app:layout_constraintStart_toStartOf="@+id/color5" />
+
+    <TextView
+        android:id="@+id/instructionsAlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="167dp"
+        android:text="@string/instructionsAlt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/customColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Hex Code (e.g. FFFFFF)"
+        android:inputType="textNoSuggestions"
+        android:maxLength="6"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="@+id/instructionsAlt"
+        app:layout_constraintTop_toBottomOf="@+id/instructionsAlt" />
+
+    <Button
+        android:id="@+id/confirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/confirmation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/customColor" />
+
+</android.support.constraint.ConstraintLayout>
